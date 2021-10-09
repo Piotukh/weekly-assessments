@@ -47,6 +47,8 @@ Created cron job
 <p> echo "Pull "`date +"%T"`"" >> /var/log/cron.log
 <p> cp -r /home/piotukh/forassessment/material-design-template/www/* /var/www/material-design-template/www/
 
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/5.png)
+
 ## Update index.html from your machine, push changes to Git and confirm updated content on web page
 
 * cd /home/piotukh/develop/material-design-template/www/
@@ -57,14 +59,32 @@ One minute after push to origin content of site was updated.
   
 ![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/4.png)
   
+## Configure local git hooks for validation of incoming commits (reject commits if there is a “shit” string in the files)
+To configure local git hooks I created script pre-commit (did it executable) in /home/piotukh/develop/material-design-template/.git/hooks/
+
+pre-commit
+* #!/usr/bin/env bash
+* /usr/bin/git diff HEAD > /var/log/diff.log
+* changed_files=$(cat diff.log | grep shit)
+* if [[ -z "${changed_files}" ]]
+* then
+*   echo "No shit detected"
+* else
+* 	echo "Shit detected"
+* 	exit 1
+* fi
+
+## * Configure Nginx to Proxy Websockets and cache static content within 1 hour
+I did 2 commits in master branch, after that created feature branch. Did 2 commits in feature branch and 1 commit in master branch. After that I merged and resilved the conflict.
+![Alt text]
+git merge feature
+![Alt text]
+git rebase feature
+![Alt text]
+git rebase --interactive --root
+![Alt text]
+  ![Alt text]
 
 
-  
-
-
-### Configure Github hook instead of cron
-
-### * Configure Nginx to Proxy Websockets and cache static content within 1 hour
-
-* Merge feature branch with main, rebase git merge commit, squash all commits
+## * Merge feature branch with main, rebase git merge commit, squash all commits
 
