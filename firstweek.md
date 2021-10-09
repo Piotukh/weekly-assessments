@@ -28,18 +28,14 @@ Just clicked Fork on Just clicked Fork on https://github.com/joashp/material-des
 
 Edited files /etc/nginx/sites-available/default and /etc/nginx/sites-enabled/default in the same (change the working directory of nginx).
 
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/2.png)
 
-
-After than copy content of /home/piotukh/forassessment/material-design-template/www to /var/www/material-design-template/www
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/63563263/136674445-2dde743d-7f61-4aef-b849-1237410749f4.png)
-
+After that copied content of /home/piotukh/forassessment/material-design-template/www to /var/www/material-design-template/www (work directory of nginx)
 
 ## Setup a cron job for a regular (every 1 minute) checkout from main branch https://github.com/YOURNAME/mdt-fork
+Created cron job
+* crontab -e
+* * * * * /home/piotukh/pull.sh
 
 
 
