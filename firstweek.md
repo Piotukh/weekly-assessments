@@ -34,12 +34,31 @@ After that copied content of /home/piotukh/forassessment/material-design-templat
 
 ## Setup a cron job for a regular (every 1 minute) checkout from main branch https://github.com/YOURNAME/mdt-fork
 Created cron job
+
 * crontab -e
-* * * * * /home/piotukh/pull.sh
+
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/3.png)
+
+* pull.sh
+
+<p> #! /usr/bin/env bash
+<p> cd /home/piotukh/forassessment/material-design-template
+<p> git pull origin master
+<p> echo "Pull "`date +"%T"`"" >> /var/log/cron.log
+<p> cp -r /home/piotukh/forassessment/material-design-template/www/* /var/www/material-design-template/www/
+
+## Update index.html from your machine, push changes to Git and confirm updated content on web page
+
+* cd /home/piotukh/develop/material-design-template/www/
+* vi index.html (Change “I love” to “I really love”)
+* git push origin
+
+One minute after push to origin content of site was updated.
+  
 
 
+  
 
-### Update index.html from your machine, push changes to Git and confirm updated content on web page
 
 ### Configure Github hook instead of cron
 
