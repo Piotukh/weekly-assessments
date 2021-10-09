@@ -55,6 +55,8 @@ Created cron job
 
 One minute after push to origin content of site was updated.
   
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/4.png)
+  
 
 
   
