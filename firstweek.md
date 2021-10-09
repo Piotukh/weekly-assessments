@@ -75,16 +75,23 @@ pre-commit
 * fi
 
 ## * Configure Nginx to Proxy Websockets and cache static content within 1 hour
-I did 2 commits in master branch, after that created feature branch. Did 2 commits in feature branch and 1 commit in master branch. After that I merged and resilved the conflict.
-![Alt text]
-git merge feature
-![Alt text]
-git rebase feature
-![Alt text]
-git rebase --interactive --root
-![Alt text]
-  ![Alt text]
 
 
 ## * Merge feature branch with main, rebase git merge commit, squash all commits
+I did 2 commits in master branch, after that created feature branch. Did 2 commits in feature branch and 1 commit in master branch. After that I merged and resilved the conflict.
+  
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/6.png)
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/7.png)  
+  
+git merge feature
+  
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/8.png)
+  
+git rebase feature
+  
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/9.png)
 
+  git rebase --interactive --root # squash all commits
+  
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/11.png)
+![Alt text](https://github.com/Piotukh/weekly-assessments/blob/main/10.png)
