@@ -1,9 +1,15 @@
 # Report
-### Install Nginx web server and git
-sudo apt update
-sudo apt upgrade -y
-sudo apt install -y nginx git
-### Fork GitHub repo https://github.com/joashp/material-design-template
+## Install Nginx web server and git
+worked under root user
+<p>apt update
+<p>apt upgrade -y
+<p>apt install -y nginx git
+<p>systemctl nginx start
+  
+## Fork GitHub repo https://github.com/joashp/material-design-template
+...Just clicked Fork on https://github.com/joashp/material-design-template and chose my Github name
+![Alt text]
+
 
 ### Setup a cron job for a regular (every 1 minute) checkout from main branch https://github.com/YOURNAME/mdt-fork
 
